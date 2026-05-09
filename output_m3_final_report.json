@@ -1,0 +1,651 @@
+[
+  {
+    "trade_id": "T001",
+    "lei_validation": "INVALID",
+    "uti_validation": "VALID",
+    "regime_compliance": {
+      "CFTC": {
+        "status": "NONCOMPLIANT",
+        "findings": [
+          "Invalid other counterparty LEI check digits: 2138002TXD6KSZ3V5X27"
+        ]
+      },
+      "EMIR": {
+        "status": "NONCOMPLIANT",
+        "findings": [
+          "Invalid other counterparty LEI check digits: 2138002TXD6KSZ3V5X27"
+        ]
+      }
+    },
+    "overall_compliance": "MATCH"
+  },
+  {
+    "trade_id": "T002",
+    "lei_validation": "INVALID",
+    "uti_validation": "VALID",
+    "regime_compliance": {
+      "CFTC": {
+        "status": "NONCOMPLIANT",
+        "findings": [
+          "Invalid other counterparty LEI check digits: 9695009AXSRNHZE85Y20",
+          "Compliance Violation: UPI is mandatory and missing"
+        ]
+      },
+      "EMIR": {
+        "status": "NONCOMPLIANT",
+        "findings": [
+          "Invalid other counterparty LEI check digits: 9695009AXSRNHZE85Y20",
+          "Compliance Violation: UPI is mandatory and missing"
+        ]
+      }
+    },
+    "overall_compliance": "MATCH"
+  },
+  {
+    "trade_id": "T003",
+    "lei_validation": "INVALID",
+    "uti_validation": "VALID",
+    "regime_compliance": {
+      "CFTC": {
+        "status": "NONCOMPLIANT",
+        "findings": [
+          "Invalid other counterparty LEI check digits: 4R3ZURLYISNNNMHMK608",
+          "Compliance Violation: UPI is mandatory and missing"
+        ]
+      },
+      "EMIR": {
+        "status": "NONCOMPLIANT",
+        "findings": [
+          "Invalid other counterparty LEI check digits: 4R3ZURLYISNNNMHMK608",
+          "Compliance Violation: UPI is mandatory and missing",
+          "EMIR Violation: Invalid portfolio code format ''",
+          "EMIR Violation: initial_margin_posted cannot be null.",
+          "EMIR Violation: variation_margin_posted cannot be null."
+        ]
+      }
+    },
+    "overall_compliance": "MATCH"
+  },
+  {
+    "trade_id": "T004",
+    "lei_validation": "INVALID",
+    "uti_validation": "VALID",
+    "regime_compliance": {
+      "CFTC": {
+        "status": "NONCOMPLIANT",
+        "findings": [
+          "other LEI is missing or placeholder",
+          "Compliance Violation: UPI is mandatory and missing"
+        ]
+      },
+      "EMIR": {
+        "status": "NONCOMPLIANT",
+        "findings": [
+          "other LEI is missing or placeholder",
+          "Compliance Violation: UPI is mandatory and missing",
+          "EMIR Violation: Invalid portfolio code format ''",
+          "EMIR Violation: initial_margin_posted cannot be null.",
+          "EMIR Violation: variation_margin_posted cannot be null."
+        ]
+      }
+    },
+    "overall_compliance": "MATCH"
+  },
+  {
+    "trade_id": "T005",
+    "lei_validation": "INVALID",
+    "uti_validation": "VALID",
+    "regime_compliance": {
+      "CFTC": {
+        "status": "NONCOMPLIANT",
+        "findings": [
+          "Invalid reporting counterparty LEI check digits: 2138002TXD6KSZ3V5X27",
+          "Compliance Violation: UPI is mandatory and missing"
+        ]
+      },
+      "EMIR": {
+        "status": "NONCOMPLIANT",
+        "findings": [
+          "Invalid reporting counterparty LEI check digits: 2138002TXD6KSZ3V5X27",
+          "Compliance Violation: UPI is mandatory and missing"
+        ]
+      }
+    },
+    "overall_compliance": "MATCH"
+  },
+  {
+    "trade_id": "T006",
+    "lei_validation": "INVALID",
+    "uti_validation": "INVALID",
+    "regime_compliance": {
+      "CFTC": {
+        "status": "NONCOMPLIANT",
+        "findings": [
+          "Invalid reporting counterparty LEI check digits: 9695009AXSRNHZE85Y20",
+          "UTI is missing or null",
+          "Compliance Violation: UPI is mandatory and missing"
+        ]
+      },
+      "EMIR": {
+        "status": "NONCOMPLIANT",
+        "findings": [
+          "Invalid reporting counterparty LEI check digits: 9695009AXSRNHZE85Y20",
+          "UTI is missing or null",
+          "Compliance Violation: UPI is mandatory and missing",
+          "EMIR Violation: Invalid portfolio code format ''",
+          "EMIR Violation: initial_margin_posted cannot be null.",
+          "EMIR Violation: variation_margin_posted cannot be null."
+        ]
+      }
+    },
+    "overall_compliance": "MATCH"
+  },
+  {
+    "trade_id": "T007",
+    "lei_validation": "INVALID",
+    "uti_validation": "VALID",
+    "regime_compliance": {
+      "CFTC": {
+        "status": "NONCOMPLIANT",
+        "findings": [
+          "Invalid reporting counterparty LEI check digits: 4R3ZURLYISNNNMHMK608",
+          "Compliance Violation: UPI is mandatory and missing"
+        ]
+      },
+      "EMIR": {
+        "status": "NONCOMPLIANT",
+        "findings": [
+          "Invalid reporting counterparty LEI check digits: 4R3ZURLYISNNNMHMK608",
+          "Compliance Violation: UPI is mandatory and missing",
+          "EMIR Violation: Invalid portfolio code format ''",
+          "EMIR Violation: initial_margin_posted cannot be null.",
+          "EMIR Violation: variation_margin_posted cannot be null."
+        ]
+      }
+    },
+    "overall_compliance": "MATCH"
+  },
+  {
+    "trade_id": "T008",
+    "lei_validation": "INVALID",
+    "uti_validation": "VALID",
+    "regime_compliance": {
+      "CFTC": {
+        "status": "NONCOMPLIANT",
+        "findings": [
+          "Invalid reporting counterparty LEI check digits: 2138002TXD6KSZ3V5X27",
+          "Compliance Violation: UPI is mandatory and missing"
+        ]
+      },
+      "EMIR": {
+        "status": "NONCOMPLIANT",
+        "findings": [
+          "Invalid reporting counterparty LEI check digits: 2138002TXD6KSZ3V5X27",
+          "Compliance Violation: UPI is mandatory and missing"
+        ]
+      }
+    },
+    "overall_compliance": "MATCH"
+  },
+  {
+    "trade_id": "T009",
+    "lei_validation": "INVALID",
+    "uti_validation": "VALID",
+    "regime_compliance": {
+      "CFTC": {
+        "status": "NONCOMPLIANT",
+        "findings": [
+          "Invalid other counterparty LEI check digits: 9695009AXSRNHZE85Y20",
+          "Compliance Violation: UPI is mandatory and missing"
+        ]
+      },
+      "EMIR": {
+        "status": "NONCOMPLIANT",
+        "findings": [
+          "Invalid other counterparty LEI check digits: 9695009AXSRNHZE85Y20",
+          "Compliance Violation: UPI is mandatory and missing",
+          "EMIR Violation: Invalid portfolio code format ''",
+          "EMIR Violation: initial_margin_posted cannot be null.",
+          "EMIR Violation: variation_margin_posted cannot be null."
+        ]
+      }
+    },
+    "overall_compliance": "MATCH"
+  },
+  {
+    "trade_id": "T010",
+    "lei_validation": "INVALID",
+    "uti_validation": "VALID",
+    "regime_compliance": {
+      "CFTC": {
+        "status": "NONCOMPLIANT",
+        "findings": [
+          "Invalid other counterparty LEI check digits: 2138002TXD6KSZ3V5X27",
+          "Compliance Violation: UPI is mandatory and missing"
+        ]
+      },
+      "EMIR": {
+        "status": "NONCOMPLIANT",
+        "findings": [
+          "Invalid other counterparty LEI check digits: 2138002TXD6KSZ3V5X27",
+          "Compliance Violation: UPI is mandatory and missing"
+        ]
+      }
+    },
+    "overall_compliance": "MATCH"
+  },
+  {
+    "trade_id": "T011",
+    "lei_validation": "INVALID",
+    "uti_validation": "VALID",
+    "regime_compliance": {
+      "CFTC": {
+        "status": "NONCOMPLIANT",
+        "findings": [
+          "Invalid other counterparty LEI check digits: 4R3ZURLYISNNNMHMK608",
+          "Compliance Violation: UPI is mandatory and missing"
+        ]
+      },
+      "EMIR": {
+        "status": "NONCOMPLIANT",
+        "findings": [
+          "Invalid other counterparty LEI check digits: 4R3ZURLYISNNNMHMK608",
+          "Compliance Violation: UPI is mandatory and missing"
+        ]
+      }
+    },
+    "overall_compliance": "MATCH"
+  },
+  {
+    "trade_id": "T012",
+    "lei_validation": "INVALID",
+    "uti_validation": "VALID",
+    "regime_compliance": {
+      "CFTC": {
+        "status": "NONCOMPLIANT",
+        "findings": [
+          "Invalid reporting counterparty LEI check digits: 9695009AXSRNHZE85Y20",
+          "Compliance Violation: UPI is mandatory and missing"
+        ]
+      },
+      "EMIR": {
+        "status": "NONCOMPLIANT",
+        "findings": [
+          "Invalid reporting counterparty LEI check digits: 9695009AXSRNHZE85Y20",
+          "Compliance Violation: UPI is mandatory and missing"
+        ]
+      }
+    },
+    "overall_compliance": "MATCH"
+  },
+  {
+    "trade_id": "T013",
+    "lei_validation": "VALID",
+    "uti_validation": "VALID",
+    "regime_compliance": {
+      "CFTC": {
+        "status": "NONCOMPLIANT",
+        "findings": [
+          "Compliance Violation: UPI is mandatory and missing"
+        ]
+      },
+      "EMIR": {
+        "status": "NONCOMPLIANT",
+        "findings": [
+          "Compliance Violation: UPI is mandatory and missing"
+        ]
+      }
+    },
+    "overall_compliance": "MATCH"
+  },
+  {
+    "trade_id": "T014",
+    "lei_validation": "INVALID",
+    "uti_validation": "VALID",
+    "regime_compliance": {
+      "CFTC": {
+        "status": "NONCOMPLIANT",
+        "findings": [
+          "Invalid reporting counterparty LEI check digits: 4R3ZURLYISNNNMHMK608",
+          "Invalid other counterparty LEI check digits: 2138002TXD6KSZ3V5X27",
+          "Compliance Violation: UPI is mandatory and missing"
+        ]
+      },
+      "EMIR": {
+        "status": "NONCOMPLIANT",
+        "findings": [
+          "Invalid reporting counterparty LEI check digits: 4R3ZURLYISNNNMHMK608",
+          "Invalid other counterparty LEI check digits: 2138002TXD6KSZ3V5X27",
+          "Compliance Violation: UPI is mandatory and missing",
+          "EMIR Violation: Invalid portfolio code format ''",
+          "EMIR Violation: initial_margin_posted cannot be null.",
+          "EMIR Violation: variation_margin_posted cannot be null."
+        ]
+      }
+    },
+    "overall_compliance": "MATCH"
+  },
+  {
+    "trade_id": "T015",
+    "lei_validation": "INVALID",
+    "uti_validation": "VALID",
+    "regime_compliance": {
+      "CFTC": {
+        "status": "NONCOMPLIANT",
+        "findings": [
+          "Invalid reporting counterparty LEI check digits: 2138002TXD6KSZ3V5X27",
+          "Compliance Violation: UPI is mandatory and missing"
+        ]
+      },
+      "EMIR": {
+        "status": "NONCOMPLIANT",
+        "findings": [
+          "Invalid reporting counterparty LEI check digits: 2138002TXD6KSZ3V5X27",
+          "Compliance Violation: UPI is mandatory and missing"
+        ]
+      }
+    },
+    "overall_compliance": "MATCH"
+  },
+  {
+    "trade_id": "T016",
+    "lei_validation": "INVALID",
+    "uti_validation": "VALID",
+    "regime_compliance": {
+      "CFTC": {
+        "status": "NONCOMPLIANT",
+        "findings": [
+          "Invalid reporting counterparty LEI check digits: 9695009AXSRNHZE85Y20",
+          "Compliance Violation: UPI is mandatory and missing"
+        ]
+      },
+      "EMIR": {
+        "status": "NONCOMPLIANT",
+        "findings": [
+          "Invalid reporting counterparty LEI check digits: 9695009AXSRNHZE85Y20",
+          "Compliance Violation: UPI is mandatory and missing",
+          "EMIR Violation: Invalid portfolio code format ''",
+          "EMIR Violation: initial_margin_posted cannot be null.",
+          "EMIR Violation: variation_margin_posted cannot be null."
+        ]
+      }
+    },
+    "overall_compliance": "MATCH"
+  },
+  {
+    "trade_id": "T017",
+    "lei_validation": "VALID",
+    "uti_validation": "VALID",
+    "regime_compliance": {
+      "CFTC": {
+        "status": "NONCOMPLIANT",
+        "findings": [
+          "Compliance Violation: UPI is mandatory and missing"
+        ]
+      },
+      "EMIR": {
+        "status": "NONCOMPLIANT",
+        "findings": [
+          "Compliance Violation: UPI is mandatory and missing",
+          "EMIR Violation: Invalid portfolio code format ''",
+          "EMIR Violation: initial_margin_posted cannot be null.",
+          "EMIR Violation: variation_margin_posted cannot be null."
+        ]
+      }
+    },
+    "overall_compliance": "MATCH"
+  },
+  {
+    "trade_id": "T018",
+    "lei_validation": "INVALID",
+    "uti_validation": "VALID",
+    "regime_compliance": {
+      "CFTC": {
+        "status": "NONCOMPLIANT",
+        "findings": [
+          "Invalid other counterparty LEI check digits: 9695009AXSRNHZE85Y20",
+          "Compliance Violation: UPI is mandatory and missing"
+        ]
+      },
+      "EMIR": {
+        "status": "NONCOMPLIANT",
+        "findings": [
+          "Invalid other counterparty LEI check digits: 9695009AXSRNHZE85Y20",
+          "Compliance Violation: UPI is mandatory and missing"
+        ]
+      }
+    },
+    "overall_compliance": "MATCH"
+  },
+  {
+    "trade_id": "T019",
+    "lei_validation": "INVALID",
+    "uti_validation": "VALID",
+    "regime_compliance": {
+      "CFTC": {
+        "status": "NONCOMPLIANT",
+        "findings": [
+          "Invalid reporting counterparty LEI check digits: 4R3ZURLYISNNNMHMK608",
+          "Compliance Violation: UPI is mandatory and missing"
+        ]
+      },
+      "EMIR": {
+        "status": "NONCOMPLIANT",
+        "findings": [
+          "Invalid reporting counterparty LEI check digits: 4R3ZURLYISNNNMHMK608",
+          "Compliance Violation: UPI is mandatory and missing",
+          "EMIR Violation: Invalid portfolio code format ''",
+          "EMIR Violation: initial_margin_posted cannot be null.",
+          "EMIR Violation: variation_margin_posted cannot be null."
+        ]
+      }
+    },
+    "overall_compliance": "MATCH"
+  },
+  {
+    "trade_id": "T020",
+    "lei_validation": "INVALID",
+    "uti_validation": "VALID",
+    "regime_compliance": {
+      "CFTC": {
+        "status": "NONCOMPLIANT",
+        "findings": [
+          "Invalid reporting counterparty LEI check digits: 2138002TXD6KSZ3V5X27",
+          "Invalid other counterparty LEI check digits: 4R3ZURLYISNNNMHMK608",
+          "Compliance Violation: UPI is mandatory and missing"
+        ]
+      },
+      "EMIR": {
+        "status": "NONCOMPLIANT",
+        "findings": [
+          "Invalid reporting counterparty LEI check digits: 2138002TXD6KSZ3V5X27",
+          "Invalid other counterparty LEI check digits: 4R3ZURLYISNNNMHMK608",
+          "Compliance Violation: UPI is mandatory and missing",
+          "EMIR Violation: Invalid portfolio code format ''",
+          "EMIR Violation: initial_margin_posted cannot be null.",
+          "EMIR Violation: variation_margin_posted cannot be null."
+        ]
+      }
+    },
+    "overall_compliance": "MATCH"
+  },
+  {
+    "trade_id": "T021",
+    "lei_validation": "VALID",
+    "uti_validation": "VALID",
+    "regime_compliance": {
+      "CFTC": {
+        "status": "NONCOMPLIANT",
+        "findings": [
+          "Compliance Violation: UPI is mandatory and missing",
+          "Invalid maturity_date: 9999-99-99"
+        ]
+      },
+      "EMIR": {
+        "status": "NONCOMPLIANT",
+        "findings": [
+          "Compliance Violation: UPI is mandatory and missing",
+          "Invalid maturity_date: 9999-99-99",
+          "EMIR Violation: Invalid portfolio code format ''",
+          "EMIR Violation: initial_margin_posted cannot be null.",
+          "EMIR Violation: variation_margin_posted cannot be null."
+        ]
+      }
+    },
+    "overall_compliance": "MATCH"
+  },
+  {
+    "trade_id": "T022",
+    "lei_validation": "INVALID",
+    "uti_validation": "VALID",
+    "regime_compliance": {
+      "CFTC": {
+        "status": "NONCOMPLIANT",
+        "findings": [
+          "Invalid reporting counterparty LEI check digits: 9695009AXSRNHZE85Y20",
+          "Compliance Violation: UPI is mandatory and missing"
+        ]
+      },
+      "EMIR": {
+        "status": "NONCOMPLIANT",
+        "findings": [
+          "Invalid reporting counterparty LEI check digits: 9695009AXSRNHZE85Y20",
+          "Compliance Violation: UPI is mandatory and missing"
+        ]
+      }
+    },
+    "overall_compliance": "MATCH"
+  },
+  {
+    "trade_id": "T023",
+    "lei_validation": "INVALID",
+    "uti_validation": "VALID",
+    "regime_compliance": {
+      "CFTC": {
+        "status": "NONCOMPLIANT",
+        "findings": [
+          "Invalid other counterparty LEI check digits: 2138002TXD6KSZ3V5X27",
+          "Compliance Violation: UPI is mandatory and missing"
+        ]
+      },
+      "EMIR": {
+        "status": "NONCOMPLIANT",
+        "findings": [
+          "Invalid other counterparty LEI check digits: 2138002TXD6KSZ3V5X27",
+          "Compliance Violation: UPI is mandatory and missing",
+          "EMIR Violation: Invalid portfolio code format ''",
+          "EMIR Violation: initial_margin_posted cannot be null.",
+          "EMIR Violation: variation_margin_posted cannot be null."
+        ]
+      }
+    },
+    "overall_compliance": "MATCH"
+  },
+  {
+    "trade_id": "T024",
+    "lei_validation": "INVALID",
+    "uti_validation": "VALID",
+    "regime_compliance": {
+      "CFTC": {
+        "status": "NONCOMPLIANT",
+        "findings": [
+          "Invalid other counterparty LEI check digits: 4R3ZURLYISNNNMHMK608",
+          "Compliance Violation: UPI is mandatory and missing"
+        ]
+      },
+      "EMIR": {
+        "status": "NONCOMPLIANT",
+        "findings": [
+          "Invalid other counterparty LEI check digits: 4R3ZURLYISNNNMHMK608",
+          "Compliance Violation: UPI is mandatory and missing"
+        ]
+      }
+    },
+    "overall_compliance": "MATCH"
+  },
+  {
+    "trade_id": "T025",
+    "lei_validation": "INVALID",
+    "uti_validation": "VALID",
+    "regime_compliance": {
+      "CFTC": {
+        "status": "NONCOMPLIANT",
+        "findings": [
+          "Invalid other counterparty LEI check digits: 9695009AXSRNHZE85Y20",
+          "Compliance Violation: UPI is mandatory and missing"
+        ]
+      },
+      "EMIR": {
+        "status": "NONCOMPLIANT",
+        "findings": [
+          "Invalid other counterparty LEI check digits: 9695009AXSRNHZE85Y20",
+          "Compliance Violation: UPI is mandatory and missing",
+          "EMIR Violation: Invalid portfolio code format ''",
+          "EMIR Violation: initial_margin_posted cannot be null.",
+          "EMIR Violation: variation_margin_posted cannot be null."
+        ]
+      }
+    },
+    "overall_compliance": "MATCH"
+  },
+  {
+    "trade_id": "T026",
+    "lei_validation": "INVALID",
+    "uti_validation": "VALID",
+    "regime_compliance": {
+      "CFTC": {
+        "status": "CONDITIONAL",
+        "findings": [
+          "CFTC: EventContract requires DCM conditional reporting."
+        ]
+      },
+      "EMIR": {
+        "status": "NOT_APPLICABLE",
+        "findings": [
+          "EMIR: Not applicable (Gl\u00fcStV 2021)."
+        ]
+      }
+    },
+    "overall_compliance": "ASYMMETRY"
+  },
+  {
+    "trade_id": "T027",
+    "lei_validation": "INVALID",
+    "uti_validation": "INVALID",
+    "regime_compliance": {
+      "CFTC": {
+        "status": "CONDITIONAL",
+        "findings": [
+          "CFTC: EventContract requires DCM conditional reporting."
+        ]
+      },
+      "EMIR": {
+        "status": "NOT_APPLICABLE",
+        "findings": [
+          "EMIR: Not applicable (Gl\u00fcStV 2021)."
+        ]
+      }
+    },
+    "overall_compliance": "ASYMMETRY"
+  },
+  {
+    "trade_id": "T028",
+    "lei_validation": "INVALID",
+    "uti_validation": "VALID",
+    "regime_compliance": {
+      "CFTC": {
+        "status": "CONDITIONAL",
+        "findings": [
+          "CFTC: EventContract requires DCM conditional reporting."
+        ]
+      },
+      "EMIR": {
+        "status": "NOT_APPLICABLE",
+        "findings": [
+          "EMIR: Not applicable (Gl\u00fcStV 2021)."
+        ]
+      }
+    },
+    "overall_compliance": "ASYMMETRY"
+  }
+]

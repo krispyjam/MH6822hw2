@@ -1,0 +1,288 @@
+[
+  {
+    "trade_id": "T001",
+    "status": "FOUND",
+    "matched_template": "Rates.Swap.Fixed_Float",
+    "upi_code": "E5PNQBPNQ7JLLM7THFMD",
+    "classification_note": null,
+    "validation_errors": [],
+    "warnings": []
+  },
+  {
+    "trade_id": "T002",
+    "status": "FOUND",
+    "matched_template": "Credit.Swap.Corporate",
+    "upi_code": null,
+    "classification_note": null,
+    "validation_errors": [],
+    "warnings": []
+  },
+  {
+    "trade_id": "T003",
+    "status": "NOT_FOUND",
+    "matched_template": null,
+    "upi_code": null,
+    "classification_note": null,
+    "validation_errors": [
+      "No matching ANNA-DSB template found."
+    ],
+    "warnings": []
+  },
+  {
+    "trade_id": "T004",
+    "status": "NOT_FOUND",
+    "matched_template": null,
+    "upi_code": null,
+    "classification_note": null,
+    "validation_errors": [
+      "No matching ANNA-DSB template found."
+    ],
+    "warnings": []
+  },
+  {
+    "trade_id": "T005",
+    "status": "FOUND",
+    "matched_template": "Rates.Swap.Fixed_Float",
+    "upi_code": null,
+    "classification_note": null,
+    "validation_errors": [],
+    "warnings": [
+      "Deprecated rate 'GBP-LIBOR-BBA' detected. Engine produces WARNING."
+    ]
+  },
+  {
+    "trade_id": "T006",
+    "status": "INVALID_ATTRIBUTES",
+    "matched_template": "Rates.Swap.Basis",
+    "upi_code": null,
+    "classification_note": null,
+    "validation_errors": [
+      "Invalid reference rate: EUR-ESTR"
+    ],
+    "warnings": []
+  },
+  {
+    "trade_id": "T007",
+    "status": "NOT_FOUND",
+    "matched_template": null,
+    "upi_code": null,
+    "classification_note": null,
+    "validation_errors": [
+      "No matching ANNA-DSB template found."
+    ],
+    "warnings": []
+  },
+  {
+    "trade_id": "T008",
+    "status": "FOUND",
+    "matched_template": "Rates.Option.Swaption",
+    "upi_code": null,
+    "classification_note": null,
+    "validation_errors": [],
+    "warnings": []
+  },
+  {
+    "trade_id": "T009",
+    "status": "NOT_FOUND",
+    "matched_template": null,
+    "upi_code": null,
+    "classification_note": null,
+    "validation_errors": [
+      "No matching ANNA-DSB template found."
+    ],
+    "warnings": []
+  },
+  {
+    "trade_id": "T010",
+    "status": "FOUND",
+    "matched_template": "Credit.Swap.Index",
+    "upi_code": null,
+    "classification_note": null,
+    "validation_errors": [],
+    "warnings": []
+  },
+  {
+    "trade_id": "T011",
+    "status": "NOT_FOUND",
+    "matched_template": null,
+    "upi_code": null,
+    "classification_note": null,
+    "validation_errors": [
+      "No matching ANNA-DSB template found."
+    ],
+    "warnings": []
+  },
+  {
+    "trade_id": "T012",
+    "status": "NOT_FOUND",
+    "matched_template": null,
+    "upi_code": null,
+    "classification_note": null,
+    "validation_errors": [
+      "No matching ANNA-DSB template found."
+    ],
+    "warnings": []
+  },
+  {
+    "trade_id": "T013",
+    "status": "NOT_FOUND",
+    "matched_template": null,
+    "upi_code": null,
+    "classification_note": null,
+    "validation_errors": [
+      "No matching ANNA-DSB template found."
+    ],
+    "warnings": []
+  },
+  {
+    "trade_id": "T014",
+    "status": "NOT_FOUND",
+    "matched_template": null,
+    "upi_code": null,
+    "classification_note": null,
+    "validation_errors": [
+      "No matching ANNA-DSB template found."
+    ],
+    "warnings": []
+  },
+  {
+    "trade_id": "T015",
+    "status": "NOT_FOUND",
+    "matched_template": null,
+    "upi_code": null,
+    "classification_note": null,
+    "validation_errors": [
+      "No matching ANNA-DSB template found."
+    ],
+    "warnings": []
+  },
+  {
+    "trade_id": "T016",
+    "status": "NOT_FOUND",
+    "matched_template": null,
+    "upi_code": null,
+    "classification_note": null,
+    "validation_errors": [
+      "No matching ANNA-DSB template found."
+    ],
+    "warnings": []
+  },
+  {
+    "trade_id": "T017",
+    "status": "FOUND",
+    "matched_template": "Credit.Swap.Sovereign",
+    "upi_code": null,
+    "classification_note": null,
+    "validation_errors": [],
+    "warnings": []
+  },
+  {
+    "trade_id": "T018",
+    "status": "NOT_FOUND",
+    "matched_template": null,
+    "upi_code": null,
+    "classification_note": null,
+    "validation_errors": [
+      "No matching ANNA-DSB template found."
+    ],
+    "warnings": []
+  },
+  {
+    "trade_id": "T019",
+    "status": "NOT_FOUND",
+    "matched_template": null,
+    "upi_code": null,
+    "classification_note": null,
+    "validation_errors": [
+      "No matching ANNA-DSB template found."
+    ],
+    "warnings": []
+  },
+  {
+    "trade_id": "T020",
+    "status": "NOT_FOUND",
+    "matched_template": null,
+    "upi_code": null,
+    "classification_note": null,
+    "validation_errors": [
+      "No matching ANNA-DSB template found."
+    ],
+    "warnings": []
+  },
+  {
+    "trade_id": "T021",
+    "status": "FOUND",
+    "matched_template": "Rates.Swap.Fixed_Float",
+    "upi_code": null,
+    "classification_note": null,
+    "validation_errors": [],
+    "warnings": []
+  },
+  {
+    "trade_id": "T022",
+    "status": "FOUND",
+    "matched_template": "Credit.Swap.ABS",
+    "upi_code": null,
+    "classification_note": null,
+    "validation_errors": [],
+    "warnings": []
+  },
+  {
+    "trade_id": "T023",
+    "status": "NOT_FOUND",
+    "matched_template": null,
+    "upi_code": null,
+    "classification_note": null,
+    "validation_errors": [
+      "No matching ANNA-DSB template found."
+    ],
+    "warnings": []
+  },
+  {
+    "trade_id": "T024",
+    "status": "FOUND",
+    "matched_template": "Rates.Swap.Fixed_Float",
+    "upi_code": null,
+    "classification_note": null,
+    "validation_errors": [],
+    "warnings": []
+  },
+  {
+    "trade_id": "T025",
+    "status": "NOT_FOUND",
+    "matched_template": null,
+    "upi_code": null,
+    "classification_note": null,
+    "validation_errors": [
+      "No matching ANNA-DSB template found."
+    ],
+    "warnings": []
+  },
+  {
+    "trade_id": "T026",
+    "status": "NO_PRODUCT_DEFINITION",
+    "matched_template": null,
+    "upi_code": null,
+    "classification_note": "Instrument type 'BinaryEventContract' under asset class 'EventContract' has no product definition in the ANNA-DSB UPI library. This reflects the current regulatory classification of prediction and event contracts as outside the OTC derivatives taxonomy in most jurisdictions. Refer to Module 4 for classification analysis.",
+    "validation_errors": [],
+    "warnings": []
+  },
+  {
+    "trade_id": "T027",
+    "status": "NO_PRODUCT_DEFINITION",
+    "matched_template": null,
+    "upi_code": null,
+    "classification_note": "Instrument type 'BinaryEventContract' under asset class 'EventContract' has no product definition in the ANNA-DSB UPI library. This reflects the current regulatory classification of prediction and event contracts as outside the OTC derivatives taxonomy in most jurisdictions. Refer to Module 4 for classification analysis.",
+    "validation_errors": [],
+    "warnings": []
+  },
+  {
+    "trade_id": "T028",
+    "status": "NO_PRODUCT_DEFINITION",
+    "matched_template": null,
+    "upi_code": null,
+    "classification_note": "Instrument type 'BinaryEventContract' under asset class 'EventContract' has no product definition in the ANNA-DSB UPI library. This reflects the current regulatory classification of prediction and event contracts as outside the OTC derivatives taxonomy in most jurisdictions. Refer to Module 4 for classification analysis.",
+    "validation_errors": [],
+    "warnings": []
+  }
+]

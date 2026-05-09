@@ -1,0 +1,426 @@
+[
+  {
+    "trade_id": "T001",
+    "parse_status": "SUCCESS",
+    "asset_class": "Rates",
+    "instrument_type": "Swap",
+    "use_case": "Fixed_Float",
+    "classification_flag": "CONVENTIONAL_DERIVATIVE",
+    "parse_errors": [],
+    "classified_fields": {
+      "notional_currency": "USD",
+      "notional_amount": 50000000,
+      "cleared": true,
+      "uti": "5493001KJTIIGC8Y1R1220241219TRD00001"
+    }
+  },
+  {
+    "trade_id": "T002",
+    "parse_status": "SUCCESS",
+    "asset_class": "Credit",
+    "instrument_type": "Swap",
+    "use_case": "Corporate",
+    "classification_flag": "CONVENTIONAL_DERIVATIVE",
+    "parse_errors": [],
+    "classified_fields": {
+      "notional_currency": "EUR",
+      "notional_amount": 10000000,
+      "cleared": false,
+      "uti": "VGRQXHF3J8VDLUA7XE9220250115CDS0001"
+    }
+  },
+  {
+    "trade_id": "T003",
+    "parse_status": "SUCCESS",
+    "asset_class": "FX",
+    "instrument_type": "Forward",
+    "use_case": "NDF",
+    "classification_flag": "CONVENTIONAL_DERIVATIVE",
+    "parse_errors": [],
+    "classified_fields": {
+      "notional_currency": "USD",
+      "notional_amount": 20000000,
+      "cleared": false,
+      "uti": "1VUV7VQFKUOQSJ21A20820250210FWD0001"
+    }
+  },
+  {
+    "trade_id": "T004",
+    "parse_status": "SUCCESS",
+    "asset_class": "Equity",
+    "instrument_type": "Option",
+    "use_case": "SingleName_Put",
+    "classification_flag": "CONVENTIONAL_DERIVATIVE",
+    "parse_errors": [],
+    "classified_fields": {
+      "notional_currency": "USD",
+      "notional_amount": 5000000,
+      "cleared": false,
+      "uti": "5493001KJTIIGC8Y1R1220250301EQ00001"
+    }
+  },
+  {
+    "trade_id": "T005",
+    "parse_status": "SUCCESS",
+    "asset_class": "Rates",
+    "instrument_type": "Swap",
+    "use_case": "Fixed_Float",
+    "classification_flag": "CONVENTIONAL_DERIVATIVE",
+    "parse_errors": [],
+    "classified_fields": {
+      "notional_currency": "GBP",
+      "notional_amount": 75000000,
+      "cleared": true,
+      "uti": "2138002TXD6KSZ3V5X2720250115IRS0001"
+    }
+  },
+  {
+    "trade_id": "T006",
+    "parse_status": "SUCCESS",
+    "asset_class": "Rates",
+    "instrument_type": "Swap",
+    "use_case": "Basis",
+    "classification_flag": "CONVENTIONAL_DERIVATIVE",
+    "parse_errors": [],
+    "classified_fields": {
+      "notional_currency": "EUR",
+      "notional_amount": 100000000,
+      "cleared": false,
+      "uti": null
+    }
+  },
+  {
+    "trade_id": "T007",
+    "parse_status": "SUCCESS",
+    "asset_class": "Commodities",
+    "instrument_type": "Swap",
+    "use_case": "SingleName",
+    "classification_flag": "CONVENTIONAL_DERIVATIVE",
+    "parse_errors": [],
+    "classified_fields": {
+      "notional_currency": "XAU",
+      "notional_amount": 5000,
+      "cleared": false,
+      "uti": "4R3ZURLYISNNNMHMK60820250506COM0001"
+    }
+  },
+  {
+    "trade_id": "T008",
+    "parse_status": "SUCCESS",
+    "asset_class": "Rates",
+    "instrument_type": "Option",
+    "use_case": "Swaption",
+    "classification_flag": "CONVENTIONAL_DERIVATIVE",
+    "parse_errors": [],
+    "classified_fields": {
+      "notional_currency": "USD",
+      "notional_amount": 200000000,
+      "cleared": false,
+      "uti": "2138002TXD6KSZ3V5X2720250301SWN0001"
+    }
+  },
+  {
+    "trade_id": "T009",
+    "parse_status": "SUCCESS",
+    "asset_class": "FX",
+    "instrument_type": "Option",
+    "use_case": "Vanilla",
+    "classification_flag": "CONVENTIONAL_DERIVATIVE",
+    "parse_errors": [],
+    "classified_fields": {
+      "notional_currency": "INVALID_CCY",
+      "notional_amount": 25000000,
+      "cleared": false,
+      "uti": "1VUV7VQFKUOQSJ21A20820251010FXO0001"
+    }
+  },
+  {
+    "trade_id": "T010",
+    "parse_status": "SUCCESS",
+    "asset_class": "Credit",
+    "instrument_type": "Swap",
+    "use_case": "Index",
+    "classification_flag": "CONVENTIONAL_DERIVATIVE",
+    "parse_errors": [],
+    "classified_fields": {
+      "notional_currency": "USD",
+      "notional_amount": 30000000,
+      "cleared": true,
+      "uti": "5299000J2N45DDNE4Y2820250115CDX0001"
+    }
+  },
+  {
+    "trade_id": "T011",
+    "parse_status": "SUCCESS",
+    "asset_class": "Rates",
+    "instrument_type": "Swap",
+    "use_case": "CrossCurrency",
+    "classification_flag": "CONVENTIONAL_DERIVATIVE",
+    "parse_errors": [],
+    "classified_fields": {
+      "notional_currency": null,
+      "notional_amount": null,
+      "cleared": false,
+      "uti": "VGRQXHF3J8VDLUA7XE9220250601XCS0001"
+    }
+  },
+  {
+    "trade_id": "T012",
+    "parse_status": "SUCCESS",
+    "asset_class": "Equity",
+    "instrument_type": "Swap",
+    "use_case": "TotalReturn_SingleIndex",
+    "classification_flag": "CONVENTIONAL_DERIVATIVE",
+    "parse_errors": [],
+    "classified_fields": {
+      "notional_currency": "USD",
+      "notional_amount": 50000000,
+      "cleared": false,
+      "uti": "9695009AXSRNHZE85Y2020250715TRS0001"
+    }
+  },
+  {
+    "trade_id": "T013",
+    "parse_status": "PARTIAL",
+    "asset_class": "Rates",
+    "instrument_type": "Swap",
+    "use_case": "Inflation",
+    "classification_flag": "CONVENTIONAL_DERIVATIVE",
+    "parse_errors": [
+      "Timestamp '2025-09-01' is not ISO 8601 UTC"
+    ],
+    "classified_fields": {
+      "notional_currency": "GBP",
+      "notional_amount": 25000000,
+      "cleared": false,
+      "uti": "1VUV7VQFKUOQSJ21A20820250901INF0001"
+    }
+  },
+  {
+    "trade_id": "T014",
+    "parse_status": "SUCCESS",
+    "asset_class": "FX",
+    "instrument_type": "Swap",
+    "use_case": "Standard",
+    "classification_flag": "CONVENTIONAL_DERIVATIVE",
+    "parse_errors": [],
+    "classified_fields": {
+      "notional_currency": "AUD",
+      "notional_amount": 40000000,
+      "cleared": false,
+      "uti": "4R3ZURLYISNNNMHMK60820251120FXS0001"
+    }
+  },
+  {
+    "trade_id": "T015",
+    "parse_status": "SUCCESS",
+    "asset_class": "Rates",
+    "instrument_type": "Cap_Floor",
+    "use_case": "Cap",
+    "classification_flag": "CONVENTIONAL_DERIVATIVE",
+    "parse_errors": [],
+    "classified_fields": {
+      "notional_currency": "USD",
+      "notional_amount": 150000000,
+      "cleared": false,
+      "uti": "2138002TXD6KSZ3V5X2720250801CAP0001"
+    }
+  },
+  {
+    "trade_id": "T016",
+    "parse_status": "SUCCESS",
+    "asset_class": "Equity",
+    "instrument_type": "Swap",
+    "use_case": "Variance",
+    "classification_flag": "CONVENTIONAL_DERIVATIVE",
+    "parse_errors": [],
+    "classified_fields": {
+      "notional_currency": "EUR",
+      "notional_amount": 15000000,
+      "cleared": false,
+      "uti": "9695009AXSRNHZE85Y202025091VARSWP01"
+    }
+  },
+  {
+    "trade_id": "T017",
+    "parse_status": "SUCCESS",
+    "asset_class": "Credit",
+    "instrument_type": "Swap",
+    "use_case": "Sovereign",
+    "classification_flag": "CONVENTIONAL_DERIVATIVE",
+    "parse_errors": [],
+    "classified_fields": {
+      "notional_currency": "USD",
+      "notional_amount": 20000000,
+      "cleared": false,
+      "uti": "5493001KJTIIGC8Y1R1220251105SOV0001"
+    }
+  },
+  {
+    "trade_id": "T018",
+    "parse_status": "SUCCESS",
+    "asset_class": "Rates",
+    "instrument_type": "Swap",
+    "use_case": "OIS",
+    "classification_flag": "CONVENTIONAL_DERIVATIVE",
+    "parse_errors": [],
+    "classified_fields": {
+      "notional_currency": "EUR",
+      "notional_amount": 500000000,
+      "cleared": true,
+      "uti": "VGRQXHF3J8VDLUA7XE9220251201OIS0001"
+    }
+  },
+  {
+    "trade_id": "T019",
+    "parse_status": "SUCCESS",
+    "asset_class": "Commodities",
+    "instrument_type": "Option",
+    "use_case": "SingleName",
+    "classification_flag": "CONVENTIONAL_DERIVATIVE",
+    "parse_errors": [],
+    "classified_fields": {
+      "notional_currency": "USD",
+      "notional_amount": 10000000,
+      "cleared": false,
+      "uti": "4R3ZURLYISNNNMHMK60820260115OPT0001"
+    }
+  },
+  {
+    "trade_id": "T020",
+    "parse_status": "SUCCESS",
+    "asset_class": "FX",
+    "instrument_type": "Option",
+    "use_case": "Barrier",
+    "classification_flag": "CONVENTIONAL_DERIVATIVE",
+    "parse_errors": [],
+    "classified_fields": {
+      "notional_currency": "USD",
+      "notional_amount": 30000000,
+      "cleared": false,
+      "uti": "2138002TXD6KSZ3V5X2720260210BRR0001"
+    }
+  },
+  {
+    "trade_id": "T021",
+    "parse_status": "PARTIAL",
+    "asset_class": "Rates",
+    "instrument_type": "Swap",
+    "use_case": "Fixed_Float",
+    "classification_flag": "CONVENTIONAL_DERIVATIVE",
+    "parse_errors": [
+      "Maturity date is placeholder 9999-99-99"
+    ],
+    "classified_fields": {
+      "notional_currency": "USD",
+      "notional_amount": 100000000,
+      "cleared": true,
+      "uti": "5493001KJTIIGC8Y1R12202603010001"
+    }
+  },
+  {
+    "trade_id": "T022",
+    "parse_status": "SUCCESS",
+    "asset_class": "Credit",
+    "instrument_type": "Swap",
+    "use_case": "ABS",
+    "classification_flag": "CONVENTIONAL_DERIVATIVE",
+    "parse_errors": [],
+    "classified_fields": {
+      "notional_currency": "USD",
+      "notional_amount": 15000000,
+      "cleared": false,
+      "uti": "9695009AXSRNHZE85Y2020260415ABS0001"
+    }
+  },
+  {
+    "trade_id": "T023",
+    "parse_status": "SUCCESS",
+    "asset_class": "Equity",
+    "instrument_type": "Forward",
+    "use_case": "SingleName",
+    "classification_flag": "CONVENTIONAL_DERIVATIVE",
+    "parse_errors": [],
+    "classified_fields": {
+      "notional_currency": "SGD",
+      "notional_amount": 8000000,
+      "cleared": false,
+      "uti": "1VUV7VQFKUOQSJ21A20820260501EQF0001"
+    }
+  },
+  {
+    "trade_id": "T024",
+    "parse_status": "SUCCESS",
+    "asset_class": "Rates",
+    "instrument_type": "Swap",
+    "use_case": "Fixed_Float",
+    "classification_flag": "CONVENTIONAL_DERIVATIVE",
+    "parse_errors": [],
+    "classified_fields": {
+      "notional_currency": "CAD",
+      "notional_amount": 60000000,
+      "cleared": true,
+      "uti": "5299000J2N45DDNE4Y2820260601IRS9999"
+    }
+  },
+  {
+    "trade_id": "T025",
+    "parse_status": "SUCCESS",
+    "asset_class": "FX",
+    "instrument_type": "Forward",
+    "use_case": "Deliverable",
+    "classification_flag": "CONVENTIONAL_DERIVATIVE",
+    "parse_errors": [],
+    "classified_fields": {
+      "notional_currency": "EUR",
+      "notional_amount": 45000000,
+      "cleared": false,
+      "uti": "VGRQXHF3J8VDLUA7XE9220260701FXF0001"
+    }
+  },
+  {
+    "trade_id": "T026",
+    "parse_status": "SUCCESS",
+    "asset_class": "EventContract",
+    "instrument_type": "BinaryEventContract",
+    "use_case": "PoliticalOutcome",
+    "classification_flag": "NOVEL_INSTRUMENT_NO_TAXONOMY",
+    "parse_errors": [],
+    "classified_fields": {
+      "notional_currency": "USD",
+      "notional_amount": 50000,
+      "cleared": true,
+      "uti": "5493001KJTIIGC8Y1R1220260301EVT00001"
+    }
+  },
+  {
+    "trade_id": "T027",
+    "parse_status": "SUCCESS",
+    "asset_class": "EventContract",
+    "instrument_type": "BinaryEventContract",
+    "use_case": "MacroeconomicOutcome",
+    "classification_flag": "NOVEL_INSTRUMENT_NO_TAXONOMY",
+    "parse_errors": [],
+    "classified_fields": {
+      "notional_currency": "USDC",
+      "notional_amount": 200000,
+      "cleared": false,
+      "uti": null
+    }
+  },
+  {
+    "trade_id": "T028",
+    "parse_status": "SUCCESS",
+    "asset_class": "EventContract",
+    "instrument_type": "BinaryEventContract",
+    "use_case": "RegulatoryDecisionOutcome",
+    "classification_flag": "NOVEL_INSTRUMENT_NO_TAXONOMY",
+    "parse_errors": [],
+    "classified_fields": {
+      "notional_currency": "USD",
+      "notional_amount": 100000,
+      "cleared": true,
+      "uti": "9695009AXSRNHZE85Y2020260115REG0001"
+    }
+  }
+]
