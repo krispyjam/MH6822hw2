@@ -1,4 +1,4 @@
-# OTC Derivatives Compliance Engine (NTU MH6822)
+# OTC Derivatives Compliance Engine (ReguVision)
 
 This repository contains an automated RegTech compliance engine designed to validate OTC derivative trades against ANNA-DSB product definitions and regulatory regimes (CFTC and EMIR). 
 
@@ -12,22 +12,24 @@ The engine processes both conventional asset classes and novel instruments (e.g.
   - `module3_compliance.py`: Final regulatory logic handling identifier audits, chronology checks, and regime-specific (CFTC/EMIR) routing.
 - `data/product_definitions/`: Local repository of ANNA-DSB JSON product definitions.
 - `trades.json`: The core dataset containing 35 trades (28 original + 7 custom-designed trades with intentional edge cases and traps).
-- `run_compliance_check.py`: The main execution script.
+- `run_compliance_check.py`: The main execution script with automated CSV auditing.
+- `team_composition.csv`: Outlines the formation of the ReguVision team.
 - `.gitignore`: Specifies intentionally untracked files (e.g., `venv`, `__pycache__`).
 
 ### Generated Output Artifacts
-Running the engine will generate a 3-stage audit trail:
-1. `output_m1_parsed_trades.json`
-2. `output_m2_upi_templates.json`
-3. `output_m3_final_report.json`
+Running the engine automatically produces a comprehensive 4-stage audit trail:
+1. `output_m1_parsed_trades.json`: Structured CDE extraction.
+2. `output_m2_upi_templates.json`: Field validation and template matching state.
+3. `output_m3_final_report.json`: Deep regulatory audit with explicit findings.
+4. `final_compliance_summary_report.csv`: A flattened, human-readable summary of all trades, regimes, and findings (ideal for Ops & Audit review).
 
 ## Key Compliance Features & Logic
 
-- **Identifier Audits**: ISO 7064 MOD 97-10 check digits for LEIs; ISO 23897 namespace and length validation for UTIs.
+- **Identifier Audits**: ISO 7064 MOD 97-10 check digits for LEIs; ISO 23897 namespace validation for UTIs.
 - **Event Contract Handling**: Differentiates between `CFTC_REGULATED_DCM` (Conditional reporting) and `DECENTRALISED_BLOCKCHAIN_PLATFORM` (Not Applicable, flags missing LEIs for retail participants).
-- **Attribute & Data Quality Rules**: Cross-references `notional_currency` against ISO standards and checks `reference_rate` against FpML codesets. Validates date chronologies (Effective Date vs. Maturity Date).
+- **Attribute & Data Quality Rules**: Cross-references `notional_currency` against ISO standards and checks `reference_rate` against FpML codesets. Validates execution and effective date chronologies.
 - **EMIR Specifics**: Detects EMIR "Margin Traps" (null margin values) and validates collateral portfolio codes via Regex (`^PORT-[A-Z0-9]{4}$`).
-- **Comprehensive Test Coverage**: Includes intentionally malformed trades (e.g., invalid currencies, UTI namespace mismatches, incorrect dates) to demonstrate engine robustness.
+- **Comprehensive Test Coverage**: Included 7 intentionally designed trades representing Edge Cases (e.g., invalid currencies, UTI namespace mismatches, and date logic reversals) to verify the engine's fault tolerance.
 
 ## Prerequisites
 - Python 3.8+
