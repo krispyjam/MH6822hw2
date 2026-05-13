@@ -23,9 +23,7 @@
     "matched_template": null,
     "upi_code": null,
     "classification_note": null,
-    "validation_errors": [
-      "No matching ANNA-DSB template found."
-    ],
+    "validation_errors": [],
     "warnings": []
   },
   {
@@ -34,9 +32,7 @@
     "matched_template": null,
     "upi_code": null,
     "classification_note": null,
-    "validation_errors": [
-      "No matching ANNA-DSB template found."
-    ],
+    "validation_errors": [],
     "warnings": []
   },
   {
@@ -67,9 +63,7 @@
     "matched_template": null,
     "upi_code": null,
     "classification_note": null,
-    "validation_errors": [
-      "No matching ANNA-DSB template found."
-    ],
+    "validation_errors": [],
     "warnings": []
   },
   {
@@ -88,7 +82,7 @@
     "upi_code": null,
     "classification_note": null,
     "validation_errors": [
-      "No matching ANNA-DSB template found."
+      "Invalid currency code: INVALID_CCY"
     ],
     "warnings": []
   },
@@ -107,9 +101,7 @@
     "matched_template": null,
     "upi_code": null,
     "classification_note": null,
-    "validation_errors": [
-      "No matching ANNA-DSB template found."
-    ],
+    "validation_errors": [],
     "warnings": []
   },
   {
@@ -118,9 +110,7 @@
     "matched_template": null,
     "upi_code": null,
     "classification_note": null,
-    "validation_errors": [
-      "No matching ANNA-DSB template found."
-    ],
+    "validation_errors": [],
     "warnings": []
   },
   {
@@ -130,7 +120,7 @@
     "upi_code": null,
     "classification_note": null,
     "validation_errors": [
-      "No matching ANNA-DSB template found."
+      "Invalid reference rate: GBP-RPI"
     ],
     "warnings": []
   },
@@ -140,9 +130,7 @@
     "matched_template": null,
     "upi_code": null,
     "classification_note": null,
-    "validation_errors": [
-      "No matching ANNA-DSB template found."
-    ],
+    "validation_errors": [],
     "warnings": []
   },
   {
@@ -151,9 +139,7 @@
     "matched_template": null,
     "upi_code": null,
     "classification_note": null,
-    "validation_errors": [
-      "No matching ANNA-DSB template found."
-    ],
+    "validation_errors": [],
     "warnings": []
   },
   {
@@ -162,9 +148,7 @@
     "matched_template": null,
     "upi_code": null,
     "classification_note": null,
-    "validation_errors": [
-      "No matching ANNA-DSB template found."
-    ],
+    "validation_errors": [],
     "warnings": []
   },
   {
@@ -183,7 +167,7 @@
     "upi_code": null,
     "classification_note": null,
     "validation_errors": [
-      "No matching ANNA-DSB template found."
+      "Invalid reference rate: EUR-ESTR"
     ],
     "warnings": []
   },
@@ -193,9 +177,7 @@
     "matched_template": null,
     "upi_code": null,
     "classification_note": null,
-    "validation_errors": [
-      "No matching ANNA-DSB template found."
-    ],
+    "validation_errors": [],
     "warnings": []
   },
   {
@@ -204,9 +186,7 @@
     "matched_template": null,
     "upi_code": null,
     "classification_note": null,
-    "validation_errors": [
-      "No matching ANNA-DSB template found."
-    ],
+    "validation_errors": [],
     "warnings": []
   },
   {
@@ -233,9 +213,7 @@
     "matched_template": null,
     "upi_code": null,
     "classification_note": null,
-    "validation_errors": [
-      "No matching ANNA-DSB template found."
-    ],
+    "validation_errors": [],
     "warnings": []
   },
   {
@@ -253,9 +231,7 @@
     "matched_template": null,
     "upi_code": null,
     "classification_note": null,
-    "validation_errors": [
-      "No matching ANNA-DSB template found."
-    ],
+    "validation_errors": [],
     "warnings": []
   },
   {
@@ -263,7 +239,7 @@
     "status": "NO_PRODUCT_DEFINITION",
     "matched_template": null,
     "upi_code": null,
-    "classification_note": "Instrument type 'BinaryEventContract' under asset class 'EventContract' has no product definition in the ANNA-DSB UPI library. This reflects the current regulatory classification of prediction and event contracts as outside the OTC derivatives taxonomy in most jurisdictions. Refer to Module 4 for classification analysis.",
+    "classification_note": "Instrument type 'BinaryEventContract' under asset class 'EventContract' has no product definition.",
     "validation_errors": [],
     "warnings": []
   },
@@ -272,8 +248,10 @@
     "status": "NO_PRODUCT_DEFINITION",
     "matched_template": null,
     "upi_code": null,
-    "classification_note": "Instrument type 'BinaryEventContract' under asset class 'EventContract' has no product definition in the ANNA-DSB UPI library. This reflects the current regulatory classification of prediction and event contracts as outside the OTC derivatives taxonomy in most jurisdictions. Refer to Module 4 for classification analysis.",
-    "validation_errors": [],
+    "classification_note": "Instrument type 'BinaryEventContract' under asset class 'EventContract' has no product definition.",
+    "validation_errors": [
+      "Invalid currency code: USDC"
+    ],
     "warnings": []
   },
   {
@@ -281,8 +259,77 @@
     "status": "NO_PRODUCT_DEFINITION",
     "matched_template": null,
     "upi_code": null,
-    "classification_note": "Instrument type 'BinaryEventContract' under asset class 'EventContract' has no product definition in the ANNA-DSB UPI library. This reflects the current regulatory classification of prediction and event contracts as outside the OTC derivatives taxonomy in most jurisdictions. Refer to Module 4 for classification analysis.",
+    "classification_note": "Instrument type 'BinaryEventContract' under asset class 'EventContract' has no product definition.",
     "validation_errors": [],
+    "warnings": []
+  },
+  {
+    "trade_id": "T029",
+    "status": "FOUND",
+    "matched_template": "Rates.Swap.Fixed_Float",
+    "upi_code": "QZ9382019283",
+    "classification_note": null,
+    "validation_errors": [],
+    "warnings": []
+  },
+  {
+    "trade_id": "T030",
+    "status": "FOUND",
+    "matched_template": "Equity.Option.Single_Index",
+    "upi_code": "E-I-S-P-B-P",
+    "classification_note": null,
+    "validation_errors": [],
+    "warnings": []
+  },
+  {
+    "trade_id": "T031",
+    "status": "INVALID_ATTRIBUTES",
+    "matched_template": "Commodities.Forward.Forward",
+    "upi_code": "C-F-E-O-P-X",
+    "classification_note": null,
+    "validation_errors": [
+      "Invalid currency code: INVALID_MYR",
+      "Invalid reference_rate_term_unit: DAY. Expected one of ['DAYS', 'WEEK', 'MNTH', 'YEAR'].",
+      "Invalid delivery_type: UNDECIDED. Expected one of ['CASH', 'PHYS', 'OPTL']."
+    ],
+    "warnings": []
+  },
+  {
+    "trade_id": "T032",
+    "status": "NOT_FOUND",
+    "matched_template": null,
+    "upi_code": null,
+    "classification_note": null,
+    "validation_errors": [],
+    "warnings": []
+  },
+  {
+    "trade_id": "T033",
+    "status": "NOT_FOUND",
+    "matched_template": null,
+    "upi_code": null,
+    "classification_note": null,
+    "validation_errors": [],
+    "warnings": []
+  },
+  {
+    "trade_id": "T034",
+    "status": "NO_PRODUCT_DEFINITION",
+    "matched_template": null,
+    "upi_code": null,
+    "classification_note": "Instrument type 'BinaryEventContract' under asset class 'EventContract' has no product definition.",
+    "validation_errors": [],
+    "warnings": []
+  },
+  {
+    "trade_id": "T035",
+    "status": "NO_PRODUCT_DEFINITION",
+    "matched_template": null,
+    "upi_code": null,
+    "classification_note": "Instrument type 'BinaryEventContract' under asset class 'EventContract' has no product definition.",
+    "validation_errors": [
+      "Invalid reference_rate_term_unit: QTRS. Expected one of ['DAYS', 'WEEK', 'MNTH', 'YEAR']."
+    ],
     "warnings": []
   }
 ]

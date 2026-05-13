@@ -24,7 +24,7 @@ class ComplianceChecker:
         Validates LEI check digits using ISO 7064 MOD 97-10.
         Specific labeling identifies if the error belongs to Reporting or Other counterparty.
         """
-        if not value or str(value).strip().upper() == "MISSING_LEI":
+        if not value or str(value).strip().upper() == "MISSING_LEI" or str(value).strip() == "":
             return False, f"{label} LEI is missing or placeholder"
         
         lei_str = str(value).strip().upper()
@@ -60,40 +60,44 @@ class ComplianceChecker:
 
     def _get_common_logic_findings(self, raw_trade: dict, m2_res: dict) -> List[str]:
         """
-        Validates CDE fields shared across regimes.
-        Enhanced for Swaps (T011) to check both notional legs if single amount is missing.
+        Validates CDE fields shared across regimes. Includes passing down pure M2 field errors.
         """
         findings = []
         
-        # 1. UPI Requirement
-        if not raw_trade.get("upi") and not m2_res.get("upi_code"):
-            findings.append("Compliance Violation: UPI is mandatory and missing")
+        # Directly import true field validation errors from Module 2
+        if "validation_errors" in m2_res and m2_res["validation_errors"]:
+            findings.extend(m2_res["validation_errors"])
+        
+        # 1. UPI Requirement (Skip for EventContract as per regulatory exclusion)
+        if raw_trade.get("asset_class") != "EventContract":
+            if not raw_trade.get("upi") and not m2_res.get("upi_code"):
+                findings.append("Compliance Violation: UPI is mandatory and missing")
 
-        # 2. Date Validation (Future effective dates allowed, no placeholders)
+        # 2. Date Validation (Only validate if fields exist to avoid False Positives for EventContracts)
         for f in ["effective_date", "maturity_date"]:
             val = raw_trade.get(f)
-            if not val or val == "9999-99-99":
-                findings.append(f"Invalid {f}: {val}")
-            else:
-                try:
-                    datetime.strptime(str(val), "%Y-%m-%d")
-                except ValueError:
-                    findings.append(f"Malformed {f}: {val}")
+            if val is not None:
+                if val == "9999-99-99" or str(val).strip() == "":
+                    findings.append(f"Invalid {f}: {val}")
+                else:
+                    try:
+                        datetime.strptime(str(val), "%Y-%m-%d")
+                    except ValueError:
+                        findings.append(f"Malformed {f}: {val}")
 
-        # Date Chronology
+        # Date Chronology (Only if both fields are present and valid)
         eff, mat = raw_trade.get("effective_date"), raw_trade.get("maturity_date")
-        if eff and mat and eff != "9999-99-99" and mat != "9999-99-99":
+        if all([eff, mat]) and eff != "9999-99-99" and mat != "9999-99-99":
             try:
                 if datetime.strptime(str(mat), "%Y-%m-%d") <= datetime.strptime(str(eff), "%Y-%m-%d"):
                     findings.append("maturity_date must be after effective_date")
-            except ValueError: pass
+            except (ValueError, TypeError): pass
 
-        # 3. Notional Amount Check (Enhanced for T011 Legs)
+        # 3. Notional Amount Check
         amt = raw_trade.get("notional_amount")
         leg1 = raw_trade.get("notional_amount_leg1")
         leg2 = raw_trade.get("notional_amount_leg2")
 
-        # Logic: Valid if (amt > 0) OR (leg1 > 0 AND leg2 > 0)
         has_valid_single = isinstance(amt, (int, float)) and amt > 0
         has_valid_legs = (isinstance(leg1, (int, float)) and leg1 > 0) and \
                          (isinstance(leg2, (int, float)) and leg2 > 0)
@@ -102,63 +106,93 @@ class ComplianceChecker:
             findings.append(f"Invalid notional_amount logic: amt={amt}, leg1={leg1}, leg2={leg2}")
 
         # 4. Format checks
-        if not isinstance(raw_trade.get("action_type"), str):
+        if "action_type" in raw_trade and not isinstance(raw_trade.get("action_type"), str):
             findings.append("action_type must be a string")
-        if not isinstance(raw_trade.get("cleared"), bool):
+        if "cleared" in raw_trade and not isinstance(raw_trade.get("cleared"), bool):
             findings.append("cleared must be boolean")
             
         return findings
 
     def check_cftc_compliance(self, m2_res: dict, raw_trade: dict, id_errors: List[str]) -> Dict:
-        """Evaluates compliance against CFTC rules for conventional/novel assets."""
+        """Evaluates compliance against CFTC rules for conventional and novel assets."""
         findings = id_errors.copy()
-        if raw_trade.get("asset_class") == "EventContract":
-            return {"status": "CONDITIONAL", "findings": ["CFTC: EventContract requires DCM conditional reporting."]}
         
-        findings.extend(self._get_common_logic_findings(raw_trade, m2_res))
-        return {"status": "NONCOMPLIANT" if findings else "COMPLIANT", "findings": findings}
+        common_findings = self._get_common_logic_findings(raw_trade, m2_res)
+        findings.extend(common_findings)
+        
+        if raw_trade.get("asset_class") == "EventContract":
+            platform = raw_trade.get("platform_type")
+            if platform == "DECENTRALISED_BLOCKCHAIN_PLATFORM":
+                status = "NOT_APPLICABLE"
+                findings.append("Not a CFTC DCM")
+                # Special check for retail participants on blockchain (missing LEI)
+                rep_lei = str(raw_trade.get("reporting_counterparty_lei") or "").upper()
+                if not rep_lei or rep_lei in ["MISSING_LEI", "NONE", ""]:
+                    findings.append("Missing LEI (Retail participants on blockchain platforms)")
+            elif platform == "CFTC_REGULATED_DCM":
+                status = "CONDITIONAL"
+            else:
+                status = "NONCOMPLIANT"
+                findings.append(f"Unknown Platform Type: {platform}")
+            
+            return {"status": status, "findings": list(set(findings))}
+        
+        return {"status": "NONCOMPLIANT" if findings else "COMPLIANT", "findings": list(set(findings))}
 
     def check_emir_compliance(self, m2_res: dict, raw_trade: dict, id_errors: List[str]) -> Dict:
-        """Evaluates compliance against EMIR rules, specifically the Margin Trap."""
+        """Evaluates compliance against EMIR rules."""
         findings = id_errors.copy()
+        
+        common_findings = self._get_common_logic_findings(raw_trade, m2_res)
+        findings.extend(common_findings)
+        
         if raw_trade.get("asset_class") == "EventContract":
-            return {"status": "NOT_APPLICABLE", "findings": ["EMIR: Not applicable (GlüStV 2021)."]}
+            return {"status": "NOT_APPLICABLE", "findings": list(set(findings))}
 
-        findings.extend(self._get_common_logic_findings(raw_trade, m2_res))
-
-        # EMIR Portfolio Code (Regex PORT-XXXX)
+        # EMIR Portfolio Code Validation
         p_code = str(raw_trade.get("collateral_portfolio_code") or "")
         if not re.match(r"^PORT-[A-Z0-9]{4}$", p_code):
             findings.append(f"EMIR Violation: Invalid portfolio code format '{p_code}'")
 
-        # EMIR Margin Trap: Null is a reporting violation
+        # EMIR Margin Trap Validation
         for field in ["initial_margin_posted", "variation_margin_posted"]:
             if raw_trade.get(field) is None:
                 findings.append(f"EMIR Violation: {field} cannot be null.")
 
-        return {"status": "NONCOMPLIANT" if findings else "COMPLIANT", "findings": findings}
+        return {"status": "NONCOMPLIANT" if findings else "COMPLIANT", "findings": list(set(findings))}
 
     def run_compliance_check(self) -> List[dict]:
-        """Main execution loop for all trades provided by Module 2."""
+        """Main execution loop auditing identifiers and regulatory status."""
         results = []
         for tid, m2_res in self.m2_results.items():
             raw_trade = self.raw_map.get(tid, {})
             rep_lei = str(raw_trade.get("reporting_counterparty_lei") or "")
             oth_lei = str(raw_trade.get("other_counterparty_lei") or "")
-
-            # Precise identifier audit
+            
+            # Identifier audit (Always run for all trades to ensure LEI detection)
             lei_rep_ok, lei_rep_err = self.validate_lei(rep_lei, "reporting")
             lei_oth_ok, lei_oth_err = self.validate_lei(oth_lei, "other")
             uti_ok, uti_err = self.validate_uti(raw_trade.get("uti"), rep_lei)
 
             id_errors = [e for e in [lei_rep_err, lei_oth_err, uti_err] if e]
+            
+            # For EventContract, UTI is not applicable per taxonomy
+            if raw_trade.get("asset_class") == "EventContract":
+                uti_status = "NOT_APPLICABLE"
+                # Filter out UTI errors from findings for EventContracts
+                id_errors = [e for e in id_errors if "UTI" not in e]
+            else:
+                uti_status = "VALID" if uti_ok else "INVALID"
+
+            lei_status = "VALID" if (lei_rep_ok and lei_oth_ok) else "INVALID"
+
             cftc_res = self.check_cftc_compliance(m2_res, raw_trade, id_errors)
             emir_res = self.check_emir_compliance(m2_res, raw_trade, id_errors)
 
             results.append({
                 "trade_id": tid,
-                "lei_validation": "VALID" if (lei_rep_ok and lei_oth_ok) else "INVALID",
-                "uti_validation": "VALID" if uti_ok else "INVALID",
+                "lei_validation": lei_status,
+                "uti_validation": uti_status,
                 "regime_compliance": {"CFTC": cftc_res, "EMIR": emir_res},
                 "overall_compliance": "MATCH" if cftc_res["status"] == emir_res["status"] else "ASYMMETRY"
             })

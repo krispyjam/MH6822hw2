@@ -422,5 +422,112 @@
       "cleared": true,
       "uti": "9695009AXSRNHZE85Y2020260115REG0001"
     }
+  },
+  {
+    "trade_id": "T029",
+    "parse_status": "SUCCESS",
+    "asset_class": "Rates",
+    "instrument_type": "Swap",
+    "use_case": "Fixed_Float",
+    "classification_flag": "CONVENTIONAL_DERIVATIVE",
+    "parse_errors": [],
+    "classified_fields": {
+      "notional_currency": "USD",
+      "notional_amount": 10000000,
+      "cleared": true,
+      "uti": "5493001KJTIIGC8Y1R1220251105SOV0001"
+    }
+  },
+  {
+    "trade_id": "T030",
+    "parse_status": "SUCCESS",
+    "asset_class": "Equity",
+    "instrument_type": "Option",
+    "use_case": "Single_Index",
+    "classification_flag": "CONVENTIONAL_DERIVATIVE",
+    "parse_errors": [],
+    "classified_fields": {
+      "notional_currency": "USD",
+      "notional_amount": 500000,
+      "cleared": true,
+      "uti": "549300Y96S9V0W1X2Y3Z00000000000000000000000000000030"
+    }
+  },
+  {
+    "trade_id": "T031",
+    "parse_status": "SUCCESS",
+    "asset_class": "Commodities",
+    "instrument_type": "Forward",
+    "use_case": "Forward",
+    "classification_flag": "CONVENTIONAL_DERIVATIVE",
+    "parse_errors": [],
+    "classified_fields": {
+      "notional_currency": "INVALID_MYR",
+      "notional_amount": 250000,
+      "cleared": false,
+      "uti": "743700ABCDE12345678900000000000000000000000000000031"
+    }
+  },
+  {
+    "trade_id": "T032",
+    "parse_status": "PARTIAL",
+    "asset_class": "Credit",
+    "instrument_type": "Swap",
+    "use_case": "MBS_Total_Return_Swap",
+    "classification_flag": "CONVENTIONAL_DERIVATIVE",
+    "parse_errors": [
+      "Maturity date (2026-01-01) must be after effective date (2027-01-01)"
+    ],
+    "classified_fields": {
+      "notional_currency": "EUR",
+      "notional_amount": 15000000,
+      "cleared": true,
+      "uti": "INVALID_LEI_FORMAT_1230000000000000000000000000000032"
+    }
+  },
+  {
+    "trade_id": "T033",
+    "parse_status": "SUCCESS",
+    "asset_class": "Foreign_Exchange",
+    "instrument_type": "Option",
+    "use_case": "Exotic_Option",
+    "classification_flag": "CLASSIFICATION_AMBIGUOUS",
+    "parse_errors": [],
+    "classified_fields": {
+      "notional_currency": "GBP",
+      "notional_amount": 2000000,
+      "cleared": false,
+      "uti": "ABCDE12345678901234500000000000000000000000000000033"
+    }
+  },
+  {
+    "trade_id": "T034",
+    "parse_status": "SUCCESS",
+    "asset_class": "EventContract",
+    "instrument_type": "BinaryEventContract",
+    "use_case": "Macroeconomic Data Release",
+    "classification_flag": "NOVEL_INSTRUMENT_NO_TAXONOMY",
+    "parse_errors": [],
+    "classified_fields": {
+      "notional_currency": "USD",
+      "notional_amount": 100000,
+      "cleared": true,
+      "uti": null
+    }
+  },
+  {
+    "trade_id": "T035",
+    "parse_status": "SUCCESS",
+    "asset_class": "EventContract",
+    "instrument_type": "BinaryEventContract",
+    "use_case": "Regulatory Outcome Speculation",
+    "classification_flag": "NOVEL_INSTRUMENT_NO_TAXONOMY",
+    "parse_errors": [],
+    "classified_fields": {
+      "notional_currency": "GBP",
+      "notional_amount": 50000,
+      "cleared": false,
+      "uti": null
+    }
   }
 ]
