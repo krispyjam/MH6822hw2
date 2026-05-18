@@ -2,7 +2,7 @@
 
 This repository contains an automated RegTech compliance engine designed to validate OTC derivative trades against ANNA-DSB product definitions and regulatory regimes (CFTC and EMIR). 
 
-The engine processes both conventional asset classes and novel instruments (e.g., Prediction Markets / Event Contracts), demonstrating robust field validation and regime-specific logic as part of the Deliverable 1 & 2 requirements.
+The engine processes both conventional asset classes and novel instruments (e.g., Prediction Markets / Event Contracts), demonstrating robust field validation and regime-specific logic as part of the Deliverable 1 & 2 requirements. It concludes with a Bonus Module 5, generating a complete HTML audit dashboard.
 
 ## Project Structure
 
@@ -10,18 +10,20 @@ The engine processes both conventional asset classes and novel instruments (e.g.
   - `module1_parser.py`: Parses CDE fields and derives classification flags.
   - `module2_upi_lookup.py`: Evaluates ANNA-DSB UPI templates and enforces field constraints (ISO currencies, FpML rates, Enums).
   - `module3_compliance.py`: Final regulatory logic handling identifier audits, chronology checks, and regime-specific (CFTC/EMIR) routing.
+- `dashboard.py`: Module 5 generator script for the interactive compliance visualization dashboard.
 - `data/product_definitions/`: Local repository of ANNA-DSB JSON product definitions.
 - `trades.json`: The core dataset containing 35 trades (28 original + 7 custom-designed trades with intentional edge cases and traps).
-- `run_compliance_check.py`: The main execution script with automated CSV auditing.
-- `team_composition.csv`: Outlines the formation of the ReguVision team.
+- `run_compliance_check.py`: The main execution script with automated CSV and HTML dashboard generation.
+- `team_ReguVision_compositions.csv`: Outlines the roles and responsibilities of the ReguVision team.
 - `.gitignore`: Specifies intentionally untracked files (e.g., `venv`, `__pycache__`).
 
 ### Generated Output Artifacts
-Running the engine automatically produces a comprehensive 4-stage audit trail:
+Running the engine automatically produces a comprehensive 5-stage audit trail:
 1. `output_m1_parsed_trades.json`: Structured CDE extraction.
 2. `output_m2_upi_templates.json`: Field validation and template matching state.
 3. `output_m3_final_report.json`: Deep regulatory audit with explicit findings.
-4. `final_compliance_summary_report.csv`: A flattened, human-readable summary of all trades, regimes, and findings (ideal for Ops & Audit review).
+4. `final_compliance_summary_report.csv`: A flattened, human-readable summary of all trades, regimes, and findings.
+5. `output_m5_dashboard.html`: An interactive HTML dashboard featuring compliance heatmaps, error frequency analysis, and a prediction market classification frontier.
 
 ## Key Compliance Features & Logic
 

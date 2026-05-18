@@ -49,18 +49,18 @@
       "CFTC": {
         "status": "NONCOMPLIANT",
         "findings": [
-          "Compliance Violation: UPI is mandatory and missing",
-          "Invalid other counterparty LEI check digits: 4R3ZURLYISNNNMHMK608"
+          "Invalid other counterparty LEI check digits: 4R3ZURLYISNNNMHMK608",
+          "Compliance Violation: UPI is mandatory and missing"
         ]
       },
       "EMIR": {
         "status": "NONCOMPLIANT",
         "findings": [
-          "EMIR Violation: variation_margin_posted cannot be null.",
           "Compliance Violation: UPI is mandatory and missing",
+          "Invalid other counterparty LEI check digits: 4R3ZURLYISNNNMHMK608",
           "EMIR Violation: Invalid portfolio code format ''",
-          "EMIR Violation: initial_margin_posted cannot be null.",
-          "Invalid other counterparty LEI check digits: 4R3ZURLYISNNNMHMK608"
+          "EMIR Violation: variation_margin_posted cannot be null.",
+          "EMIR Violation: initial_margin_posted cannot be null."
         ]
       }
     },
@@ -74,17 +74,17 @@
       "CFTC": {
         "status": "NONCOMPLIANT",
         "findings": [
-          "Compliance Violation: UPI is mandatory and missing",
-          "other LEI is missing or placeholder"
+          "other LEI is missing or placeholder",
+          "Compliance Violation: UPI is mandatory and missing"
         ]
       },
       "EMIR": {
         "status": "NONCOMPLIANT",
         "findings": [
-          "EMIR Violation: variation_margin_posted cannot be null.",
           "Compliance Violation: UPI is mandatory and missing",
           "other LEI is missing or placeholder",
           "EMIR Violation: Invalid portfolio code format ''",
+          "EMIR Violation: variation_margin_posted cannot be null.",
           "EMIR Violation: initial_margin_posted cannot be null."
         ]
       }
@@ -121,20 +121,20 @@
       "CFTC": {
         "status": "NONCOMPLIANT",
         "findings": [
-          "UTI is missing or null",
           "Invalid reporting counterparty LEI check digits: 9695009AXSRNHZE85Y20",
-          "Invalid reference rate: EUR-ESTR",
-          "Compliance Violation: UPI is mandatory and missing"
+          "Compliance Violation: UPI is mandatory and missing",
+          "UTI is missing or null",
+          "Invalid reference rate: EUR-ESTR"
         ]
       },
       "EMIR": {
         "status": "NONCOMPLIANT",
         "findings": [
-          "EMIR Violation: variation_margin_posted cannot be null.",
-          "Invalid reference rate: EUR-ESTR",
           "Invalid reporting counterparty LEI check digits: 9695009AXSRNHZE85Y20",
           "Compliance Violation: UPI is mandatory and missing",
           "EMIR Violation: Invalid portfolio code format ''",
+          "EMIR Violation: variation_margin_posted cannot be null.",
+          "Invalid reference rate: EUR-ESTR",
           "EMIR Violation: initial_margin_posted cannot be null.",
           "UTI is missing or null"
         ]
@@ -157,10 +157,10 @@
       "EMIR": {
         "status": "NONCOMPLIANT",
         "findings": [
-          "EMIR Violation: variation_margin_posted cannot be null.",
           "Invalid reporting counterparty LEI check digits: 4R3ZURLYISNNNMHMK608",
           "Compliance Violation: UPI is mandatory and missing",
           "EMIR Violation: Invalid portfolio code format ''",
+          "EMIR Violation: variation_margin_posted cannot be null.",
           "EMIR Violation: initial_margin_posted cannot be null."
         ]
       }
@@ -205,12 +205,12 @@
       "EMIR": {
         "status": "NONCOMPLIANT",
         "findings": [
-          "EMIR Violation: variation_margin_posted cannot be null.",
-          "Invalid currency code: INVALID_CCY",
           "Compliance Violation: UPI is mandatory and missing",
           "EMIR Violation: Invalid portfolio code format ''",
-          "EMIR Violation: initial_margin_posted cannot be null.",
-          "Invalid other counterparty LEI check digits: 9695009AXSRNHZE85Y20"
+          "EMIR Violation: variation_margin_posted cannot be null.",
+          "Invalid currency code: INVALID_CCY",
+          "Invalid other counterparty LEI check digits: 9695009AXSRNHZE85Y20",
+          "EMIR Violation: initial_margin_posted cannot be null."
         ]
       }
     },
@@ -246,15 +246,15 @@
       "CFTC": {
         "status": "NONCOMPLIANT",
         "findings": [
-          "Compliance Violation: UPI is mandatory and missing",
-          "Invalid other counterparty LEI check digits: 4R3ZURLYISNNNMHMK608"
+          "Invalid other counterparty LEI check digits: 4R3ZURLYISNNNMHMK608",
+          "Compliance Violation: UPI is mandatory and missing"
         ]
       },
       "EMIR": {
         "status": "NONCOMPLIANT",
         "findings": [
-          "Compliance Violation: UPI is mandatory and missing",
-          "Invalid other counterparty LEI check digits: 4R3ZURLYISNNNMHMK608"
+          "Invalid other counterparty LEI check digits: 4R3ZURLYISNNNMHMK608",
+          "Compliance Violation: UPI is mandatory and missing"
         ]
       }
     },
@@ -320,12 +320,12 @@
       "EMIR": {
         "status": "NONCOMPLIANT",
         "findings": [
-          "EMIR Violation: variation_margin_posted cannot be null.",
           "Invalid reporting counterparty LEI check digits: 4R3ZURLYISNNNMHMK608",
           "Compliance Violation: UPI is mandatory and missing",
+          "Invalid other counterparty LEI check digits: 2138002TXD6KSZ3V5X27",
           "EMIR Violation: Invalid portfolio code format ''",
-          "EMIR Violation: initial_margin_posted cannot be null.",
-          "Invalid other counterparty LEI check digits: 2138002TXD6KSZ3V5X27"
+          "EMIR Violation: variation_margin_posted cannot be null.",
+          "EMIR Violation: initial_margin_posted cannot be null."
         ]
       }
     },
@@ -368,11 +368,11 @@
       "EMIR": {
         "status": "NONCOMPLIANT",
         "findings": [
-          "EMIR Violation: variation_margin_posted cannot be null.",
+          "Invalid reporting counterparty LEI check digits: 9695009AXSRNHZE85Y20",
           "Compliance Violation: UPI is mandatory and missing",
           "EMIR Violation: Invalid portfolio code format ''",
-          "EMIR Violation: initial_margin_posted cannot be null.",
-          "Invalid reporting counterparty LEI check digits: 9695009AXSRNHZE85Y20"
+          "EMIR Violation: variation_margin_posted cannot be null.",
+          "EMIR Violation: initial_margin_posted cannot be null."
         ]
       }
     },
@@ -392,10 +392,10 @@
       "EMIR": {
         "status": "NONCOMPLIANT",
         "findings": [
-          "EMIR Violation: variation_margin_posted cannot be null.",
+          "EMIR Violation: Invalid portfolio code format ''",
           "EMIR Violation: initial_margin_posted cannot be null.",
-          "Compliance Violation: UPI is mandatory and missing",
-          "EMIR Violation: Invalid portfolio code format ''"
+          "EMIR Violation: variation_margin_posted cannot be null.",
+          "Compliance Violation: UPI is mandatory and missing"
         ]
       }
     },
@@ -409,17 +409,17 @@
       "CFTC": {
         "status": "NONCOMPLIANT",
         "findings": [
-          "Invalid reference rate: EUR-ESTR",
           "Invalid other counterparty LEI check digits: 9695009AXSRNHZE85Y20",
-          "Compliance Violation: UPI is mandatory and missing"
+          "Compliance Violation: UPI is mandatory and missing",
+          "Invalid reference rate: EUR-ESTR"
         ]
       },
       "EMIR": {
         "status": "NONCOMPLIANT",
         "findings": [
-          "Invalid reference rate: EUR-ESTR",
           "Invalid other counterparty LEI check digits: 9695009AXSRNHZE85Y20",
-          "Compliance Violation: UPI is mandatory and missing"
+          "Compliance Violation: UPI is mandatory and missing",
+          "Invalid reference rate: EUR-ESTR"
         ]
       }
     },
@@ -440,10 +440,10 @@
       "EMIR": {
         "status": "NONCOMPLIANT",
         "findings": [
-          "EMIR Violation: variation_margin_posted cannot be null.",
           "Invalid reporting counterparty LEI check digits: 4R3ZURLYISNNNMHMK608",
           "Compliance Violation: UPI is mandatory and missing",
           "EMIR Violation: Invalid portfolio code format ''",
+          "EMIR Violation: variation_margin_posted cannot be null.",
           "EMIR Violation: initial_margin_posted cannot be null."
         ]
       }
@@ -458,19 +458,19 @@
       "CFTC": {
         "status": "NONCOMPLIANT",
         "findings": [
+          "Invalid other counterparty LEI check digits: 4R3ZURLYISNNNMHMK608",
           "Invalid reporting counterparty LEI check digits: 2138002TXD6KSZ3V5X27",
-          "Compliance Violation: UPI is mandatory and missing",
-          "Invalid other counterparty LEI check digits: 4R3ZURLYISNNNMHMK608"
+          "Compliance Violation: UPI is mandatory and missing"
         ]
       },
       "EMIR": {
         "status": "NONCOMPLIANT",
         "findings": [
-          "EMIR Violation: variation_margin_posted cannot be null.",
           "Compliance Violation: UPI is mandatory and missing",
-          "EMIR Violation: Invalid portfolio code format ''",
-          "EMIR Violation: initial_margin_posted cannot be null.",
           "Invalid other counterparty LEI check digits: 4R3ZURLYISNNNMHMK608",
+          "EMIR Violation: Invalid portfolio code format ''",
+          "EMIR Violation: variation_margin_posted cannot be null.",
+          "EMIR Violation: initial_margin_posted cannot be null.",
           "Invalid reporting counterparty LEI check digits: 2138002TXD6KSZ3V5X27"
         ]
       }
@@ -492,10 +492,10 @@
       "EMIR": {
         "status": "NONCOMPLIANT",
         "findings": [
-          "EMIR Violation: variation_margin_posted cannot be null.",
           "Compliance Violation: UPI is mandatory and missing",
-          "Invalid maturity_date: 9999-99-99",
           "EMIR Violation: Invalid portfolio code format ''",
+          "Invalid maturity_date: 9999-99-99",
+          "EMIR Violation: variation_margin_posted cannot be null.",
           "EMIR Violation: initial_margin_posted cannot be null."
         ]
       }
@@ -539,11 +539,11 @@
       "EMIR": {
         "status": "NONCOMPLIANT",
         "findings": [
-          "EMIR Violation: variation_margin_posted cannot be null.",
           "Compliance Violation: UPI is mandatory and missing",
+          "Invalid other counterparty LEI check digits: 2138002TXD6KSZ3V5X27",
           "EMIR Violation: Invalid portfolio code format ''",
-          "EMIR Violation: initial_margin_posted cannot be null.",
-          "Invalid other counterparty LEI check digits: 2138002TXD6KSZ3V5X27"
+          "EMIR Violation: variation_margin_posted cannot be null.",
+          "EMIR Violation: initial_margin_posted cannot be null."
         ]
       }
     },
@@ -557,15 +557,15 @@
       "CFTC": {
         "status": "NONCOMPLIANT",
         "findings": [
-          "Compliance Violation: UPI is mandatory and missing",
-          "Invalid other counterparty LEI check digits: 4R3ZURLYISNNNMHMK608"
+          "Invalid other counterparty LEI check digits: 4R3ZURLYISNNNMHMK608",
+          "Compliance Violation: UPI is mandatory and missing"
         ]
       },
       "EMIR": {
         "status": "NONCOMPLIANT",
         "findings": [
-          "Compliance Violation: UPI is mandatory and missing",
-          "Invalid other counterparty LEI check digits: 4R3ZURLYISNNNMHMK608"
+          "Invalid other counterparty LEI check digits: 4R3ZURLYISNNNMHMK608",
+          "Compliance Violation: UPI is mandatory and missing"
         ]
       }
     },
@@ -586,11 +586,11 @@
       "EMIR": {
         "status": "NONCOMPLIANT",
         "findings": [
-          "EMIR Violation: variation_margin_posted cannot be null.",
           "Compliance Violation: UPI is mandatory and missing",
           "EMIR Violation: Invalid portfolio code format ''",
-          "EMIR Violation: initial_margin_posted cannot be null.",
-          "Invalid other counterparty LEI check digits: 9695009AXSRNHZE85Y20"
+          "EMIR Violation: variation_margin_posted cannot be null.",
+          "Invalid other counterparty LEI check digits: 9695009AXSRNHZE85Y20",
+          "EMIR Violation: initial_margin_posted cannot be null."
         ]
       }
     },
@@ -625,8 +625,8 @@
         "status": "NOT_APPLICABLE",
         "findings": [
           "Invalid currency code: USDC",
-          "Not a CFTC DCM",
-          "other LEI is missing or placeholder"
+          "other LEI is missing or placeholder",
+          "Not a CFTC DCM"
         ]
       },
       "EMIR": {
@@ -685,17 +685,17 @@
       "CFTC": {
         "status": "NONCOMPLIANT",
         "findings": [
-          "Invalid other counterparty LEI check digits: 1234567890ABCDEFGHIJ",
-          "Invalid reporting counterparty LEI check digits: 549300Y96S9V0W1X2Y3Z"
+          "Invalid reporting counterparty LEI check digits: 549300Y96S9V0W1X2Y3Z",
+          "Invalid other counterparty LEI check digits: 1234567890ABCDEFGHIJ"
         ]
       },
       "EMIR": {
         "status": "NONCOMPLIANT",
         "findings": [
-          "EMIR Violation: variation_margin_posted cannot be null.",
-          "Invalid other counterparty LEI check digits: 1234567890ABCDEFGHIJ",
+          "Invalid reporting counterparty LEI check digits: 549300Y96S9V0W1X2Y3Z",
           "EMIR Violation: initial_margin_posted cannot be null.",
-          "Invalid reporting counterparty LEI check digits: 549300Y96S9V0W1X2Y3Z"
+          "Invalid other counterparty LEI check digits: 1234567890ABCDEFGHIJ",
+          "EMIR Violation: variation_margin_posted cannot be null."
         ]
       }
     },
@@ -709,24 +709,24 @@
       "CFTC": {
         "status": "NONCOMPLIANT",
         "findings": [
-          "Invalid currency code: INVALID_MYR",
-          "Invalid delivery_type: UNDECIDED. Expected one of ['CASH', 'PHYS', 'OPTL'].",
           "Invalid other counterparty LEI check digits: 9876543210ZYXWVUTSRQ",
+          "Invalid reference_rate_term_unit: DAY. Expected one of ['DAYS', 'WEEK', 'MNTH', 'YEAR'].",
           "Invalid reporting counterparty LEI check digits: 743700ABCDE123456789",
-          "Invalid reference_rate_term_unit: DAY. Expected one of ['DAYS', 'WEEK', 'MNTH', 'YEAR']."
+          "Invalid delivery_type: UNDECIDED. Expected one of ['CASH', 'PHYS', 'OPTL'].",
+          "Invalid currency code: INVALID_MYR"
         ]
       },
       "EMIR": {
         "status": "NONCOMPLIANT",
         "findings": [
-          "EMIR Violation: variation_margin_posted cannot be null.",
-          "Invalid currency code: INVALID_MYR",
-          "Invalid delivery_type: UNDECIDED. Expected one of ['CASH', 'PHYS', 'OPTL'].",
           "Invalid other counterparty LEI check digits: 9876543210ZYXWVUTSRQ",
-          "EMIR Violation: Invalid portfolio code format ''",
-          "EMIR Violation: initial_margin_posted cannot be null.",
+          "Invalid reference_rate_term_unit: DAY. Expected one of ['DAYS', 'WEEK', 'MNTH', 'YEAR'].",
           "Invalid reporting counterparty LEI check digits: 743700ABCDE123456789",
-          "Invalid reference_rate_term_unit: DAY. Expected one of ['DAYS', 'WEEK', 'MNTH', 'YEAR']."
+          "EMIR Violation: Invalid portfolio code format ''",
+          "Invalid delivery_type: UNDECIDED. Expected one of ['CASH', 'PHYS', 'OPTL'].",
+          "EMIR Violation: variation_margin_posted cannot be null.",
+          "EMIR Violation: initial_margin_posted cannot be null.",
+          "Invalid currency code: INVALID_MYR"
         ]
       }
     },
@@ -740,20 +740,20 @@
       "CFTC": {
         "status": "NONCOMPLIANT",
         "findings": [
-          "maturity_date must be after effective_date",
-          "UTI length 53 exceeds 52 characters",
+          "Invalid other counterparty LEI check digits: 88888888888888888888",
           "reporting LEI length error: 22",
-          "Invalid other counterparty LEI check digits: 88888888888888888888"
+          "maturity_date must be after effective_date",
+          "UTI length 53 exceeds 52 characters"
         ]
       },
       "EMIR": {
         "status": "NONCOMPLIANT",
         "findings": [
-          "EMIR Violation: Invalid portfolio code format 'MBS-C523'",
-          "UTI length 53 exceeds 52 characters",
+          "reporting LEI length error: 22",
           "Invalid other counterparty LEI check digits: 88888888888888888888",
           "maturity_date must be after effective_date",
-          "reporting LEI length error: 22"
+          "EMIR Violation: Invalid portfolio code format 'MBS-C523'",
+          "UTI length 53 exceeds 52 characters"
         ]
       }
     },
@@ -767,20 +767,20 @@
       "CFTC": {
         "status": "NONCOMPLIANT",
         "findings": [
-          "UTI namespace mismatch: must start with reporting LEI 549300ZZZZZXXXXXWWWW",
           "Invalid reporting counterparty LEI check digits: 549300ZZZZZXXXXXWWWW",
+          "UTI namespace mismatch: must start with reporting LEI 549300ZZZZZXXXXXWWWW",
           "Invalid other counterparty LEI check digits: 549300QQQQQPPPPPOOOO"
         ]
       },
       "EMIR": {
         "status": "NONCOMPLIANT",
         "findings": [
-          "UTI namespace mismatch: must start with reporting LEI 549300ZZZZZXXXXXWWWW",
-          "EMIR Violation: variation_margin_posted cannot be null.",
           "Invalid reporting counterparty LEI check digits: 549300ZZZZZXXXXXWWWW",
+          "UTI namespace mismatch: must start with reporting LEI 549300ZZZZZXXXXXWWWW",
+          "EMIR Violation: Invalid portfolio code format 'PORTA-J1258'",
+          "EMIR Violation: variation_margin_posted cannot be null.",
           "Invalid other counterparty LEI check digits: 549300QQQQQPPPPPOOOO",
-          "EMIR Violation: initial_margin_posted cannot be null.",
-          "EMIR Violation: Invalid portfolio code format 'PORTA-J1258'"
+          "EMIR Violation: initial_margin_posted cannot be null."
         ]
       }
     },
@@ -816,16 +816,16 @@
       "CFTC": {
         "status": "CONDITIONAL",
         "findings": [
-          "Invalid other counterparty LEI check digits: 777700JJJJJKKKKKLLLL",
           "Invalid reference_rate_term_unit: QTRS. Expected one of ['DAYS', 'WEEK', 'MNTH', 'YEAR'].",
+          "Invalid other counterparty LEI check digits: 777700JJJJJKKKKKLLLL",
           "Invalid reporting counterparty LEI check digits: 666600GGGGGHHHHHIIII"
         ]
       },
       "EMIR": {
         "status": "NOT_APPLICABLE",
         "findings": [
-          "Invalid other counterparty LEI check digits: 777700JJJJJKKKKKLLLL",
           "Invalid reference_rate_term_unit: QTRS. Expected one of ['DAYS', 'WEEK', 'MNTH', 'YEAR'].",
+          "Invalid other counterparty LEI check digits: 777700JJJJJKKKKKLLLL",
           "Invalid reporting counterparty LEI check digits: 666600GGGGGHHHHHIIII"
         ]
       }
