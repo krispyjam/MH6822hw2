@@ -14,7 +14,7 @@ The engine processes both conventional asset classes and novel instruments (e.g.
 - `data/product_definitions/`: Local repository of ANNA-DSB JSON product definitions.
 - `trades.json`: The core dataset containing 35 trades (28 original + 7 custom-designed trades with intentional edge cases and traps).
 - `run_compliance_check.py`: The main execution script with automated CSV and HTML dashboard generation.
-- `team_ReguVision_compositions.csv`: Outlines the roles and responsibilities of the ReguVision team.
+- `team_ReguVision_compositions.csv`: Outlines the formation of the ReguVision team.
 - `.gitignore`: Specifies intentionally untracked files (e.g., `venv`, `__pycache__`).
 
 ### Generated Output Artifacts
