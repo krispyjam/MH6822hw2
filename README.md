@@ -15,7 +15,6 @@ The engine processes both conventional asset classes and novel instruments (e.g.
 - `trades.json`: The core dataset containing 35 trades (28 original + 7 custom-designed trades with intentional edge cases and traps).
 - `run_compliance_check.py`: The main execution script with automated CSV and HTML dashboard generation.
 - `team_ReguVision_compositions.csv`: Outlines the formation of the ReguVision team.
-- `MH6822 Presentation Deck.mp4`: A five-minute recorded presentation. You can use this or the link in our submission email.
 - `.gitignore`: Specifies intentionally untracked files (e.g., `venv`, `__pycache__`).
 
 ### Generated Output Artifacts
