@@ -25,6 +25,10 @@ Running the engine automatically produces a comprehensive 5-stage audit trail:
 4. `final_compliance_summary_report.csv`: A flattened, human-readable summary of all trades, regimes, and findings.
 5. `output_m5_dashboard.html`: An interactive HTML dashboard featuring compliance heatmaps, error frequency analysis, and a prediction market classification frontier.
 
+## Recorded Presentation
+The 5-minute project demonstration and walkthrough video is hosted on Google Drive. It provides a comprehensive overview of the ReguVision engine, data validations, and critical analysis.
+- **Video Link**: https://drive.google.com/file/d/1veImolnwiegDqR20RvXgL8p49OJBnIrf/view?usp=sharing
+
 ## Key Compliance Features & Logic
 
 - **Identifier Audits**: ISO 7064 MOD 97-10 check digits for LEIs; ISO 23897 namespace validation for UTIs.
