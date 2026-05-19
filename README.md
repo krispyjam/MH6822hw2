@@ -10,7 +10,7 @@ The engine processes both conventional asset classes and novel instruments (e.g.
   - `module1_parser.py`: Parses CDE fields and derives classification flags.
   - `module2_upi_lookup.py`: Evaluates ANNA-DSB UPI templates and enforces field constraints (ISO currencies, FpML rates, Enums).
   - `module3_compliance.py`: Final regulatory logic handling identifier audits, chronology checks, and regime-specific (CFTC/EMIR) routing.
-- `dashboard.py`: Module 5 generator script for the interactive compliance visualization dashboard.
+  - `dashboard.py`: Module 5 generator script for the interactive compliance visualization dashboard.
 - `data/product_definitions/`: Local repository of ANNA-DSB JSON product definitions.
 - `trades.json`: The core dataset containing 35 trades (28 original + 7 custom-designed trades with intentional edge cases and traps).
 - `run_compliance_check.py`: The main execution script with automated CSV and HTML dashboard generation.
