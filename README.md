@@ -26,7 +26,7 @@ Running the engine automatically produces a comprehensive 5-stage audit trail:
 5. `output_m5_dashboard.html`: An interactive HTML dashboard featuring compliance heatmaps, error frequency analysis, and a prediction market classification frontier.
 
 ## Written Report
-The written report is the deliverable for Module 4. It is accessible on Google Drive.
+The written report is accessible on Google Drive.
 - **Report Link**: https://drive.google.com/file/d/1OAeogsNx9rTvdMEjxkrlQxG-6H7VCOE9/view
 
 ## Recorded Presentation
