@@ -4,6 +4,12 @@ This repository contains an automated RegTech compliance engine designed to vali
 
 The engine processes both conventional asset classes and novel instruments (e.g., Prediction Markets / Event Contracts), demonstrating robust field validation and regime-specific logic as part of the Deliverable 1 & 2 requirements. It concludes with a Bonus Module 5, generating a complete HTML audit dashboard.
 
+## Team Composition
+Our team consists of three members:
+Zhang Zhiqing (zhan0764@e.ntu.edu.sg, G2508196F)
+Chen Chang (chang026@e.ntu.edu.sg, G2505474B)
+Zeng Yongyin (yongyin002@e.ntu.edu.sg, G2505470C)
+
 ## Project Structure
 
 - `src/`
